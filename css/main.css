@@ -89,7 +89,9 @@ img {
           flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease; }
   .form-container #title {
     font-weight: 700;
     font-size: 36px;
@@ -126,6 +128,23 @@ img {
         background: rgba(0, 0, 0, 0.1);
         border: 2px solid #fff;
         color: #fff; }
+  .form-container #confirm-password-field {
+    margin: 0; }
+  .form-container .not-match {
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    display: none;
+    max-width: 300px;
+    width: 85%;
+    height: 30px;
+    text-align: center;
+    color: rgba(255, 0, 0, 0.8);
+    background: none;
+    border: 2px solid rgba(255, 0, 0, 0.8);
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 20px; }
   .form-container .buttons {
     width: 100%; }
     .form-container .buttons .button {
